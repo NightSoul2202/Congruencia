@@ -73,7 +73,7 @@ void Congruencia::laststep()
     cout << endl;
 
     cout << "Pk" << setw(4) << "1" << setw(5) << *firstel;
-    
+
     for (auto i = l.begin(); i != l.end(); ++i)
     {
         if (*i == *firstel)
@@ -127,10 +127,10 @@ void Congruencia::check()
         SetColor(15, 0);
     }
     cout << endl;
-    cout << a << " * " << xmod << "(mod" << m << ") = " << b << endl;
+    cout << a << " * " << xmod << "(mod" << m << ") = " << checkTrue << endl;
     cout << endl;
 }
-  
+
 
 int main()
 {
@@ -150,7 +150,7 @@ int main()
         system("pause");
         system("cls");
         cout << "Чи бажаєте ви продовжити?" << endl;
-        vector<string> v = { "Так", "Ні"};
+        vector<string> v = { "Так", "Ні" };
         int menu = m.select_vertical(v) + 1;
         switch (menu)
         {
@@ -161,7 +161,5 @@ int main()
         }
         system("cls");
     }
-   
+
 }
-
-
